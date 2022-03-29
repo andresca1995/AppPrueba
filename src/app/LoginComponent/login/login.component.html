@@ -1,0 +1,46 @@
+<div class="card-index-padre">
+<div class="hijo">
+    <div class="center">
+        <div class="center">
+        <div class="hijo">
+          <h1 class="nameapp">SOLFIX SMART CITY</h1>
+        </div>
+        </div>
+    </div>
+</div>
+<div class="hijo">
+  <div class="center">
+    <div class="center">
+      <mat-card class="card-login">
+        <div class="center">
+          <mat-card-title>Bienvenido</mat-card-title>
+        </div>
+        <mat-card-content>
+          <form [formGroup]="loginform">
+            <div class="column">
+              <mat-form-field  appearance="fill">
+               <mat-label>Usuario</mat-label>
+               <input matInput #input placeholder="Usuario" formControlName='usuario'>
+                <mat-icon matSuffix>account_circle</mat-icon>
+              </mat-form-field>
+              <mat-form-field appearance="fill">
+               <mat-label>Contraseña</mat-label>
+                <input matInput [type]="hide ? 'password' : 'text'" formControlName='password'>
+                <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+                  <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+                </button>
+              </mat-form-field>
+              <p class="text-danger" [hidden]="mserror">Credenciales inconrrectas</p>
+            </div>
+        </form>
+        </mat-card-content>
+        <mat-card-actions>
+          <div class="center">
+          <button mat-flat-button color="primary" (click)="login()">Iniciar</button>
+          </div>
+        </mat-card-actions>
+      </mat-card>
+    </div>
+</div>
+</div>
+</div>

@@ -1,0 +1,19 @@
+[
+  {
+    "id": "/subscriptions/a25153d6-ea9a-4386-9b60-edaded999674/resourceGroups/maps-pruebas/providers/Microsoft.Resources/deployments/Microsoft.Maps-20220327132025/operations/79264920F6C124F3",
+    "operationId": "79264920F6C124F3",
+    "properties": {
+      "provisioningOperation": "Create",
+      "provisioningState": "Running",
+      "timestamp": "2022-03-27T18:21:59.3454922Z",
+      "duration": "PT0.7961718S",
+      "trackingId": "1b8d6a58-8a19-4fab-a423-64dffdec106e",
+      "statusCode": "Created",
+      "targetResource": {
+        "id": "/subscriptions/a25153d6-ea9a-4386-9b60-edaded999674/resourceGroups/maps-pruebas/providers/Microsoft.Maps/accounts/Prueba-maps",
+        "resourceType": "Microsoft.Maps/accounts",
+        "resourceName": "Prueba-maps"
+      }
+    }
+  }
+]

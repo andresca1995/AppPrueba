@@ -1,0 +1,37 @@
+.hijo1 {
+  width: 25%;
+}
+.hijo2 {
+  width: 75%;
+}
+.hijo3 {
+  width: 100%;
+}
+.map { 
+  width:50vw;
+  height:45vw;
+}
+
+.center {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: space-between;
+}
+.card-login {
+  width: 90%;
+  margin-bottom: 8px;
+}
+
+
+@media only screen and (max-width: 867px)  {
+  .map { 
+    width:90vw;
+    height:100vw;
+  }
+.center {
+  width: 70%;
+}
+
+}

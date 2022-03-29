@@ -1,0 +1,32 @@
+<div >
+    <form [formGroup]="punto" class="column"> 
+    <div class="row">
+        <p>Id &nbsp;</p> <b><p>{{mesa?mesa.id:''}}</p></b>
+    </div>
+     
+
+    <mat-form-field appearance="fill">
+        <mat-label>Nombre</mat-label>
+        <input matInput placeholder="Nombre" required formControlName='nombre'>
+    </mat-form-field>
+    
+    <mat-form-field appearance="fill">
+        <mat-label>Descripcion</mat-label>
+        <input matInput placeholder="Descripcion"  formControlName='descripcion'> 
+    </mat-form-field>
+
+    <mat-form-field appearance="fill">
+        <mat-label>Longitud</mat-label>
+        <input matInput placeholder="Latitud" required formControlName='longitud' >
+    </mat-form-field>
+
+    <mat-form-field appearance="fill">
+        <mat-label>Latitud</mat-label>
+        <input matInput placeholder="Longitud" required formControlName='latitud'>
+    </mat-form-field>
+    </form>
+</div>
+<div class="flex">
+    <button class="btn" mat-raised-button color="warn" (click)="cerrar()">Cancelar</button>
+    <button mat-raised-button color="accent" [mat-dialog-close]="punto.value">Enviar</button>
+</div>

@@ -1,0 +1,37 @@
+.nameapp{
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 5vw;
+    line-height: initial;
+    font-weight: bold;
+}
+
+.column{
+    height: 100%;
+    display: flex;
+    justify-content: center ;
+    flex-direction: column;
+    align-items: center;
+}
+.center {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: space-between;
+}
+.card-login {
+    width: 90%;
+    margin-bottom: 8px;
+  }
+
+@media only screen and (max-width: 768px)  {
+    .nameapp{
+        font-size: 40px;
+    }  
+    
+.center {
+    width: 100%;
+}
+
+}

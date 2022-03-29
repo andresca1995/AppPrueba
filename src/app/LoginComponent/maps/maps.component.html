@@ -1,0 +1,36 @@
+
+<div class="card-index-padre">
+    <div class="hijo1">
+        <div class="center">
+            <div class="center">
+            <div class="hijo3">
+                <mat-accordion class="example-headers-align" multi>
+                    <mat-expansion-panel *ngFor="let punto of listpuntos" >
+                      <mat-expansion-panel-header>
+                        <mat-panel-title>
+                         Punto {{punto.id}}
+                        </mat-panel-title>
+                        <mat-panel-description>
+                            {{punto.nombre}}
+                        </mat-panel-description>
+                      </mat-expansion-panel-header>
+                      <h3>{{punto.descripcion}}</h3>
+                      <p>Cordenadas</p>  
+                        <ul>
+                            <li>Latitud: {{punto.latitud}}</li>
+                            <li>Longitud: {{punto.longitud}}</li>
+                        </ul>
+                    <button mat-raised-button color="primary" (click)="editar(punto)">Editar</button>
+                    </mat-expansion-panel>
+                  </mat-accordion>
+                  <button style="margin-top: 10px;" mat-raised-button color="primary" (click)="nuevo()">Crear</button>
+            </div>
+            </div>
+        </div>
+    </div>
+    <div class="hijo2">
+        <div class="center">
+                <div id="myMap" class="map"></div>
+        </div>
+    </div>
+</div>

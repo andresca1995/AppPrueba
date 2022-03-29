@@ -1,1 +1,40 @@
-/* You can add global styles to this file, and also import other style files */
+
+
+.image{
+    background-image: url(assets/Imagenes/edificiosdespock.jpg);
+    max-width: 100%;
+    max-height: 100%;
+    background-size: 100% 100%;
+}
+
+.card-index-padre {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: space-between;
+
+  }
+  .hijo {
+    width: 50%;
+  }
+
+  .text-danger{
+    color: red;
+  }
+
+
+@media only screen and (max-width: 912px)  {
+.image{
+    background-image: url(assets/Imagenes/edificiosmovil.jpg)
+}
+
+.card-index-padre {
+    flex-direction: column;
+}
+.hijo {
+    width: 90%;
+  }
+}
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

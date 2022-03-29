@@ -1,0 +1,66 @@
+{
+  "id": "/subscriptions/a25153d6-ea9a-4386-9b60-edaded999674/resourceGroups/maps-pruebas/providers/Microsoft.Resources/deployments/Microsoft.Maps-20220327132025",
+  "name": "Microsoft.Maps-20220327132025",
+  "type": "Microsoft.Resources/deployments",
+  "tags": {
+    "marketplaceItemId": "Microsoft.Maps"
+  },
+  "properties": {
+    "templateHash": "5353230280042685435",
+    "parameters": {
+      "name": {
+        "type": "String",
+        "value": "Prueba-maps"
+      },
+      "location": {
+        "type": "String",
+        "value": "eastus"
+      },
+      "kind": {
+        "type": "String",
+        "value": "Gen2"
+      },
+      "pricingSpec": {
+        "type": "String",
+        "value": "g2"
+      },
+      "userIdentities": {
+        "type": "Object",
+        "value": {
+          "type": "None"
+        }
+      },
+      "tagsByResource": {
+        "type": "Object",
+        "value": {}
+      },
+      "apiVersion": {
+        "type": "String",
+        "value": "2021-12-01-preview"
+      }
+    },
+    "mode": "Incremental",
+    "debugSetting": {
+      "detailLevel": "None"
+    },
+    "provisioningState": "Running",
+    "timestamp": "2022-03-27T18:21:59.3046375Z",
+    "duration": "PT1.3773013S",
+    "correlationId": "cd63e425-7698-4be5-8a27-97bc69c5c406",
+    "providers": [
+      {
+        "namespace": "Microsoft.Maps",
+        "resourceTypes": [
+          {
+            "resourceType": "accounts",
+            "locations": [
+              "eastus"
+            ]
+          }
+        ]
+      }
+    ],
+    "dependencies": [],
+    "validationLevel": "Template"
+  }
+}
